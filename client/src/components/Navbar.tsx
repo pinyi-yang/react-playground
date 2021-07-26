@@ -7,9 +7,9 @@ export const Navbar: React.FC = (): React.ReactElement => {
     ]
 
     const renderedLinks = links.map(item => (
-        <>
-            <Link to={item.link}>{item.name}</Link> |
-        </>
+        <div key={item.name}>
+            <Link to={item.link} >{item.name}</Link> |
+        </div>
     ))
     return (
         <div style={{background: "lightgrey", padding: 8}}>
